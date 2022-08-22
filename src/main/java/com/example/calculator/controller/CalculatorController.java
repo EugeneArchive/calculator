@@ -1,7 +1,6 @@
 package com.example.calculator.controller;
 
 import com.example.calculator.service.CalculatorService;
-import com.example.calculator.service.CalculatorServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
     private final CalculatorService calculatorService;
 
- public CalculatorController(CalculatorServiceImpl calculatorService) {
+ public CalculatorController(CalculatorService calculatorService) {
       this.calculatorService = calculatorService;
    }
 
